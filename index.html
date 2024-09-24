@@ -26,7 +26,7 @@
         </div>
         <div class="navbar-end flex justify-center gap-2">
           <span> <img src="./assets/coin.png" alt="" /></span>
-          <p>5500</p>
+          <p id="main-balance">5500</p>
           <span>BDT</span>
         </div>
       </div>
@@ -59,7 +59,7 @@
           <div class="card-body w-1/2 p-6">
             <div class="flex items-start m-2 space-x-2">
               <span><img src="./assets/coin.png" alt="" /></span>
-              <p>0 <span>BDT</span></p>
+              <p id="balance-field">0 <span>BDT</span></p>
             </div>
             <h2 class="card-title text-lg font-bold">
               Donate for Flood at Noakhali, Bangladesh
@@ -76,6 +76,7 @@
             <!-- Donation Input -->
             <div class="form-control mt-4">
               <input
+                id="input-donation-amount"
                 type="number"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
@@ -108,7 +109,7 @@
           <div class="card-body w-1/2 p-6">
             <div class="flex items-start m-2 space-x-2">
               <span><img src="./assets/coin.png" alt="" /></span>
-              <p>600 <span>BDT</span></p>
+              <p id="balance-field-2">600 <span>BDT</span></p>
             </div>
             <h2 class="card-title text-lg font-bold">
               Donate for Flood Relief in Feni,Bangladesh
@@ -127,6 +128,7 @@
             <!-- Donation Input -->
             <div class="form-control mt-4">
               <input
+                id="input-donation-amount-2"
                 type="number"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
@@ -135,7 +137,9 @@
 
             <!-- Donate Button -->
             <div class="card-actions justify-end mt-4">
-              <button class="btn btn-primary w-full">Donate Now</button>
+              <button id="card2-donate-btn" class="btn btn-primary w-full">
+                Donate Now
+              </button>
             </div>
           </div>
         </div>
@@ -157,7 +161,7 @@
           <div class="card-body w-1/2 p-6">
             <div class="flex items-start m-2 space-x-2">
               <span><img src="./assets/coin.png" alt="" /></span>
-              <p>2400 <span>BDT</span></p>
+              <p id="balance-field-3">2400 <span>BDT</span></p>
             </div>
             <h2 class="card-title text-lg font-bold">
               Aid for Injured in the Quota Movement
@@ -177,7 +181,8 @@
             <!-- Donation Input -->
             <div class="form-control mt-4">
               <input
-                type="number"
+                id="input-donation-amount-3"
+                type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
               />
@@ -185,7 +190,9 @@
 
             <!-- Donate Button -->
             <div class="card-actions justify-end mt-4">
-              <button class="btn btn-primary w-full">Donate Now</button>
+              <button id="card3-donate-btn" class="btn btn-primary w-full">
+                Donate Now
+              </button>
             </div>
           </div>
         </div>
@@ -193,5 +200,6 @@
     </main>
     <script src="./js/utilites.js"></script>
     <script src="./js/donate.js"></script>
+    <script src="./js/accountBalance.js"></script>
   </body>
 </html>

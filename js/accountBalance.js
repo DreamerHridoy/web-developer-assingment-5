@@ -6,9 +6,9 @@ document
 
     const donateMoney = getInputBtnValueForDonate("input-donation-amount");
 
-    const Balance = getTextBtnValueForDonate("balance-field");
-    const newBalance = donateMoney + Balance;
-    document.getElementById("balance-field").innerText = newBalance;
+    const Balance = getTextBtnValueForDonate("main-balance");
+    const newBalance = Balance - donateMoney;
+    document.getElementById("main-balance").innerText = newBalance;
   });
 // card2 part
 document
@@ -16,9 +16,9 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault;
     const donateMoney2 = getInputBtnValueForDonate("input-donation-amount-2");
-    const Balance2 = getTextBtnValueForDonate("balance-field-2");
-    const newBalance2 = Balance2 + donateMoney2;
-    document.getElementById("balance-field-2").innerText = newBalance2;
+    const Balance2 = getTextBtnValueForDonate("main-balance");
+    const newBalance2 = Balance2 - donateMoney2;
+    document.getElementById("main-balance").innerText = newBalance2;
   });
 
 // card3 part
@@ -29,7 +29,7 @@ document
 
     const donateMoney = getInputBtnValueForDonate("input-donation-amount-3");
 
-    const Balance = getTextBtnValueForDonate("balance-field-3");
-    const newBalance = donateMoney + Balance;
-    document.getElementById("balance-field-3").innerText = newBalance;
+    const Balance = getTextBtnValueForDonate("main-balance");
+    const newBalance = Balance - donateMoney;
+    document.getElementById("main-balance").innerText = newBalance;
   });
