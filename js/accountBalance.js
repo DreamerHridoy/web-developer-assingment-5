@@ -8,6 +8,7 @@ document
 
     const Balance = getTextBtnValueForDonate("main-balance");
     const newBalance = Balance - donateMoney;
+
     document.getElementById("main-balance").innerText = newBalance;
   });
 // card2 part
