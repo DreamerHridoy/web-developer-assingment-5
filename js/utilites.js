@@ -8,3 +8,11 @@ function getTextBtnValueForDonate(id) {
   const textValueNumber = parseFloat(textValue);
   return textValueNumber;
 }
+
+function showSectionById(id) {
+  document.getElementById("donation-money-form").classList.add("hidden");
+  //   document.getElementById("history-of-transaction").classList.add("hidden");
+
+  //   removing hidden for selected id
+  document.getElementById(id).classList.remove("hidden");
+}
