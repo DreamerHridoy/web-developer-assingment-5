@@ -6,6 +6,12 @@ document
 
     const donateMoney = getInputBtnValueForDonate("input-donation-amount");
 
+    if (isNaN(donateMoney)) {
+      return null;
+    }
+    //  modal calling
+    document.getElementById("my_modal_1").showModal();
+
     const Balance = getTextBtnValueForDonate("balance-field");
 
     const newBalance = donateMoney + Balance;
@@ -17,8 +23,8 @@ document
       timeZone: "Asia/Dhaka",
     });
 
-    p.innerText = `
-    ${donateMoney} BDT is Donate for Flood at Noakhali,Bangladesh.
+    p.innerHTML = `
+    ${donateMoney} <strong> BDT is Donate for Flood at Noakhali,Bangladesh.</strong> </br>
     Date: ${currentDateTime}`;
 
     // adding in history

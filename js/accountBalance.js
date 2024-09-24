@@ -5,8 +5,12 @@ document
     event.preventDefault();
 
     const donateMoney = getInputBtnValueForDonate("input-donation-amount");
+    if (isNaN(donateMoney)) {
+      return null;
+    }
 
     const Balance = getTextBtnValueForDonate("main-balance");
+
     const newBalance = Balance - donateMoney;
 
     document.getElementById("main-balance").innerText = newBalance;

@@ -12,9 +12,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="mx-auto max-w-screen-xl sticky top-0 bg-white z-50">
+    <header class="mx-auto max-w-screen-xl sticky top-0 bg-purple-300 z-50">
       <!-- nav section  -->
-      <div class="navbar bg-base-100">
+      <div class="navbar bg-purple-300">
         <div class="navbar-start">
           <a href="./blog.html" class="btn btn-accent"> Blog </a>
         </div>
@@ -35,7 +35,7 @@
         <div class="space-x-4 mb-4">
           <button
             id="donation-form"
-            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-green-400"
           >
             Donation
           </button>
@@ -227,12 +227,17 @@
       </button>
       <dialog id="my_modal_1" class="modal">
         <div class="modal-box">
-          <h3 class="text-lg font-bold">Hello!</h3>
-          <p class="py-4">Press ESC key or click the button below to close</p>
+          <h3 class="text-3xl font-bold text-center">Congrats!</h3>
+          <br />
+          <p class="flex justify-center">
+            <img src="./assets/coin.png" alt="" />
+          </p>
+          <p class="py-4 text-center">You Have Donated For Humankind</p>
+          <h3 class="font-bold text-lg text-center">Successfully</h3>
           <div class="modal-action">
             <form method="dialog">
               <!-- if there is a button in form, it will close the modal -->
-              <button class="btn">Close</button>
+              <button class="btn text-center">Close Confirmation</button>
             </form>
           </div>
         </div>
