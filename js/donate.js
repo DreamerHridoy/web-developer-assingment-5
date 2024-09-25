@@ -13,7 +13,6 @@ document
     }
     //  modal calling
     if (donateMoney <= Balance) {
-      document.getElementById("my_modal_1").showModal();
     }
 
     const newBalance = donateMoney + Balance;

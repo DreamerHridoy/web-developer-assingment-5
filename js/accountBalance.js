@@ -10,7 +10,7 @@ document
     }
 
     const mainBalance = getTextBtnValueForDonate("main-balance");
-    if (donateMoney >= mainBalance) {
+    if (donateMoney > mainBalance) {
       alert("you do not have enough money");
       return;
     } else {
