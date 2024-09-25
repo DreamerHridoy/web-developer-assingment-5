@@ -6,14 +6,15 @@ document
 
     const donateMoney = getInputBtnValueForDonate("input-donation-amount");
 
+    const Balance = getTextBtnValueForDonate("balance-field");
+
     if (isNaN(donateMoney)) {
       return null;
     }
     //  modal calling
-
-    document.getElementById("my_modal_1").showModal();
-
-    const Balance = getTextBtnValueForDonate("balance-field");
+    if (donateMoney <= Balance) {
+      document.getElementById("my_modal_1").showModal();
+    }
 
     const newBalance = donateMoney + Balance;
     document.getElementById("balance-field").innerText = newBalance;
@@ -37,14 +38,16 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     const donateMoney2 = getInputBtnValueForDonate("input-donation-amount-2");
+    const Balance2 = getTextBtnValueForDonate("balance-field-2");
 
     if (isNaN(donateMoney2)) {
       return null;
     }
     //  modal calling
+    if (donateMoney2 < Balance2) {
+      document.getElementById("my_modal_1").showModal();
+    }
 
-    document.getElementById("my_modal_1").showModal();
-    const Balance2 = getTextBtnValueForDonate("balance-field-2");
     const newBalance2 = Balance2 + donateMoney2;
     document.getElementById("balance-field-2").innerText = newBalance2;
 
@@ -68,13 +71,15 @@ document
     event.preventDefault();
 
     const donateMoney = getInputBtnValueForDonate("input-donation-amount-3");
+    const Balance = getTextBtnValueForDonate("balance-field-3");
     if (isNaN(donateMoney)) {
       return null;
     }
     //  modal calling
-    document.getElementById("my_modal_1").showModal();
+    if (donateMoney < Balance) {
+      document.getElementById("my_modal_1").showModal();
+    }
 
-    const Balance = getTextBtnValueForDonate("balance-field-3");
     const newBalance = donateMoney + Balance;
     document.getElementById("balance-field-3").innerText = newBalance;
 

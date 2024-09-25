@@ -9,14 +9,16 @@ document
       return null;
     }
 
-    const Balance = getTextBtnValueForDonate("main-balance");
-    if (donateMoney > Balance) {
+    const mainBalance = getTextBtnValueForDonate("main-balance");
+    if (donateMoney >= mainBalance) {
       alert("you do not have enough money");
       return;
+    } else {
+      document.getElementById("my_modal_1").showModal();
     }
     // document.getElementById("my_modal_1").showModal();
 
-    const newBalance = Balance - donateMoney;
+    const newBalance = mainBalance - donateMoney;
 
     document.getElementById("main-balance").innerText = newBalance;
   });
@@ -30,12 +32,14 @@ document
       return null;
     }
 
-    const Balance2 = getTextBtnValueForDonate("main-balance");
-    if (donateMoney2 > Balance2) {
+    const mainBalance = getTextBtnValueForDonate("main-balance");
+    if (donateMoney2 > mainBalance) {
       alert("you do not have enough money");
       return;
+    } else {
+      document.getElementById("my_modal_1").showModal();
     }
-    const newBalance2 = Balance2 - donateMoney2;
+    const newBalance2 = mainBalance - donateMoney2;
     document.getElementById("main-balance").innerText = newBalance2;
   });
 
@@ -50,11 +54,13 @@ document
       return null;
     }
 
-    const Balance = getTextBtnValueForDonate("main-balance");
-    if (donateMoney > Balance) {
+    const mainBalance = getTextBtnValueForDonate("main-balance");
+    if (donateMoney > mainBalance) {
       alert("You do not have enough money");
       return;
+    } else {
+      document.getElementById("my_modal_1").showModal();
     }
-    const newBalance = Balance - donateMoney;
+    const newBalance = mainBalance - donateMoney;
     document.getElementById("main-balance").innerText = newBalance;
   });
