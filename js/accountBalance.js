@@ -14,6 +14,7 @@ document
       alert("you do not have enough money");
       return;
     }
+    // document.getElementById("my_modal_1").showModal();
 
     const newBalance = Balance - donateMoney;
 
@@ -23,7 +24,7 @@ document
 document
   .getElementById("card2-donate-btn")
   .addEventListener("click", function (event) {
-    event.preventDefault;
+    event.preventDefault();
     const donateMoney2 = getInputBtnValueForDonate("input-donation-amount-2");
     if (isNaN(donateMoney2)) {
       return null;

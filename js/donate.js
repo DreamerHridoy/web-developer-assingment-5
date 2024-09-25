@@ -10,6 +10,7 @@ document
       return null;
     }
     //  modal calling
+
     document.getElementById("my_modal_1").showModal();
 
     const Balance = getTextBtnValueForDonate("balance-field");
@@ -34,13 +35,14 @@ document
 document
   .getElementById("card2-donate-btn")
   .addEventListener("click", function (event) {
-    event.preventDefault;
+    event.preventDefault();
     const donateMoney2 = getInputBtnValueForDonate("input-donation-amount-2");
 
     if (isNaN(donateMoney2)) {
       return null;
     }
     //  modal calling
+
     document.getElementById("my_modal_1").showModal();
     const Balance2 = getTextBtnValueForDonate("balance-field-2");
     const newBalance2 = Balance2 + donateMoney2;
@@ -51,8 +53,8 @@ document
     const currentDateTime = new Date().toLocaleString("en-US", {
       timeZone: "Asia/Dhaka",
     });
-    p.innerText = `
-    ${donateMoney2}BDT is Donate for Flood Relief in Feni,Bangladesh 
+    p.innerHTML = `
+    ${donateMoney2}<strong> BDT is Donate for Flood Relief in Feni,Bangladesh</strong> 
     Date: ${currentDateTime}`;
 
     // adding in history
@@ -81,8 +83,9 @@ document
     const currentDateTime = new Date().toLocaleString("en-US", {
       timeZone: "Asia/Dhaka",
     });
-    p.innerText = `
-    ${donateMoney} BDT Aid for Injured in the Quota Movement 
+    p.innerHTML = `
+    ${donateMoney} 
+    <strong>BDT Aid for Injured in the Quota Movement </strong>
     Date: ${currentDateTime}`;
 
     // adding in history
